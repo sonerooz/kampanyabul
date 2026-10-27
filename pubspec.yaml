@@ -1,0 +1,55 @@
+name: kampanyabul
+description: "KampanyaBul — banka/cüzdan kampanyalarını tek yerde arama (kişisel)."
+publish_to: 'none'
+version: 0.5.1+6
+
+environment:
+  sdk: ^3.13.3
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.20.3
+  shared_preferences: ^2.5.6
+  url_launcher: ^6.3.3
+  path_provider: 2.1.6
+  # Emlak Deal ile aynı sabit sürümler (giriş)
+  google_sign_in: 6.2.2
+  flutter_facebook_auth: 7.1.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/kampanyalar.json
+    - assets/kart_katalog.json
+    - assets/gorsel/
+  fonts:
+    - family: Jakarta
+      fonts:
+        - asset: assets/fonts/PJS-400.ttf
+          weight: 400
+        - asset: assets/fonts/PJS-500.ttf
+          weight: 500
+        - asset: assets/fonts/PJS-600.ttf
+          weight: 600
+        - asset: assets/fonts/PJS-700.ttf
+          weight: 700
+        - asset: assets/fonts/PJS-800.ttf
+          weight: 800
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  remove_alpha_ios: true
+  image_path: "ikon/ikon.png"
+  adaptive_icon_background: "#0E7C6B"
+  adaptive_icon_foreground: "ikon/ikon_on.png"
+  min_sdk_android: 21

@@ -1,0 +1,3 @@
+// Bu dosyayı Sosyal.xcconfig adıyla kopyala ve değeri doldur (depoya girmez).
+// Değer: developers.facebook.com → Emlak Deal → Ayarlar → Gelişmiş → İstemci tokeni
+FACEBOOK_CLIENT_TOKEN = buraya_istemci_tokeni
